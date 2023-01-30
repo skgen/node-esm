@@ -32,7 +32,8 @@ module.exports = {
             },
             "multilineDetection": "brackets"
         }],
-        "import/prefer-default-export": "off"
+        "max-classes-per-file": "off",
+        "import/prefer-default-export": "off",
     },
     ignorePatterns: [".eslintrc.cjs", "dist"],
 };
