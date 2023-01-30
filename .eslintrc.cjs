@@ -5,7 +5,10 @@ module.exports = {
     },
     parser: "@typescript-eslint/parser",
     parserOptions: {
-        project: ['./tsconfig.json'],
+        project: [
+            'tsconfig.app.json',
+            'tsconfig.config.json',
+        ],
         sourceType: 'module',
         ecmaVersion: 2020,
     },
@@ -19,16 +22,17 @@ module.exports = {
         'import/extensions': 'off',
         'no-restricted-syntax': 'off',
         "@typescript-eslint/member-delimiter-style": ["error", {
-        "multiline": {
-            "delimiter": "semi",
-            "requireLast": true
-        },
-        "singleline": {
-            "delimiter": "semi",
-            "requireLast": false
-        },
-        "multilineDetection": "brackets"
+            "multiline": {
+                "delimiter": "semi",
+                "requireLast": true
+            },
+            "singleline": {
+                "delimiter": "semi",
+                "requireLast": false
+            },
+            "multilineDetection": "brackets"
         }],
+        "import/prefer-default-export": "off"
     },
     ignorePatterns: [".eslintrc.cjs", "dist"],
 };
