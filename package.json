@@ -5,12 +5,12 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/patriarche/node-esm/skeleton"
+    "url": "https://gitlab.com/patriarche/node/node-esm-app"
   },
   "bugs": {
-    "url": "https://gitlab.com/patriarche/node-esm/skeleton/issues"
+    "url": "https://gitlab.com/patriarche/node/node-esm-app/issues"
   },
-  "homepage": "https://gitlab.com/patriarche/node-esm/skeleton/-/blob/main/README.md",
+  "homepage": "https://gitlab.com/patriarche/node/node-esm-app/-/blob/main/README.md",
   "scripts": {
     "start": "node dist/main.js",
     "dev": "tsx watch --tsconfig tsconfig.app.json src/main.ts",
