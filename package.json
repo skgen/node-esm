@@ -14,7 +14,7 @@
     "build": "tsx --tsconfig tsconfig.config.json scripts/build.ts",
     "review": "pnpm review:typescript && pnpm review:eslint",
     "review:typescript": "tsc --noEmit -p tsconfig.app.json --composite false",
-    "review:eslint": "eslint . --ext .js,.cjs,.mjs,.ts,.cts,.mts --fix --ignore-path .gitignore"
+    "review:eslint": "eslint . --ext .js,.cjs,.mjs,.ts,.cts,.mts --fix"
   },
   "dependencies": {
     "dotenv-flow": "catalog:",
