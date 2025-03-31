@@ -10,9 +10,6 @@ if (env.error) {
   throw env.error;
 }
 
-console.log(env.parsed);
-
-
 const typed = dotenvParseVariables(env.parsed ?? {}) as NodeJS.ProcessEnv;
 
 process.env = { ...typed };
