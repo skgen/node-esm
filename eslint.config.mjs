@@ -25,7 +25,7 @@ const config = antfu(
               'object',
               'unknown',
             ],
-            newlinesBetween: 'ignore',
+            newlinesBetween: 'always',
             internalPattern: ['^@/.+'],
             order: 'asc',
             type: 'natural',
