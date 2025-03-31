@@ -1,5 +1,5 @@
-import { build } from 'esbuild';
 import { root } from '@/partials/resolve.js';
+import { build } from 'esbuild';
 
 const entrypoint = root('src/main.ts');
 const outPoint = root('dist/main.js');

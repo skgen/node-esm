@@ -1,13 +1,13 @@
 {
   "name": "node-esm",
+  "type": "module",
   "version": "1.0.0",
   "license": "MIT",
-  "type": "module",
+  "homepage": "https://github.com/skgen/node-esm/README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/skgen/node-esm"
   },
-  "homepage": "https://github.com/skgen/node-esm/README.md",
   "scripts": {
     "start": "node dist/main.js",
     "dev": "tsx watch --tsconfig tsconfig.app.json src/main.ts",
@@ -21,6 +21,7 @@
     "dotenv-parse-variables": "catalog:"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
     "@tsconfig/node20": "catalog:",
     "@types/dotenv-parse-variables": "catalog:",
     "@types/node": "catalog:",
