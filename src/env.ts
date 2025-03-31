@@ -1,4 +1,5 @@
 import process from 'node:process';
+
 import dotenvFlow from 'dotenv-flow';
 import dotenvParseVariables from 'dotenv-parse-variables';
 
@@ -13,4 +14,6 @@ if (env.error) {
 
 const typed = dotenvParseVariables(env.parsed ?? {}) as NodeJS.ProcessEnv;
 
-process.env = { ...process.env, ...typed };
+for (const [key, value] of Object.entries(typed)) {
+  process.env[key] = value;
+}
